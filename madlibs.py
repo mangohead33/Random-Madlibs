@@ -16,28 +16,33 @@ def fantasyThemed():
   adjective3 = input("Enter an adjective: ")
   action1 = input("Enter an action: ")
   action2 = input("Enter second Action: ")
-  print(f"The kingdom of {nameOfKingdom}, ruled by the {adjective1} {nameOfMonarch} and the fair {nameOfSpouse} has run into a little problem.\n The land of {nameOfKingdom} has been plagued with {nameOfProblem} and it has turned the citizens {adjective2} and {adjective3}.\n The wise {nameOfMonarch} decided to best fix the problem, they will {action1} the {nameOfProblem} and {action2} the people.\n")
+  print(f"The kingdom of {nameOfKingdom}, ruled by the {adjective1} {nameOfMonarch} and the fair {nameOfSpouse} has run into a little problem.\nThe land of {nameOfKingdom} has been plagued with {nameOfProblem} and it has turned the citizens {adjective2} and {adjective3}.\nThe wise {nameOfMonarch} decided to best fix the problem, they will {action1} the {nameOfProblem} and {action2} the people.\n")
 
 def sciFiThemed():
   currentYear = input("Enter a random year: ")
   nameOfAlien = input("Enter a silly name: ")
   adjective1 = input("Enter an adjective: ")
   adjective2 = input("Enter an adjective: ")
-  action1 = input("Enter an action ending with ed: ")
+  action1 = input("Enter an action: ")
   yourName = input("Enter your name: ")
   action2 = input("Enter an action: ")
-  result = input("Enter a result ex(success, failure, unknown...): ")
+  result = input("Enter a a type of result: ")
   verb = input("Enter a verb: ")
   place = input("Enter name of place: ")
-  print(f"It is the year {currentYear} and alien race known as the {nameOfAlien}s have invaded earth.\n The aliens are a race of {adjective1}, and {adjective2} creatures and they wish to {action1} the people of Earth.\n Thankfully {yourName} is in charge dealing with the aliens, and you plan to {action2} them.\n The plan was a  huge {result} and the {nameOfAlien}s have decided to {verb} and they went to {place} instead.\n")
+  print(f"It is the year {currentYear} and alien race known as the {nameOfAlien}s have invaded earth.\nThe aliens are a race of {adjective1}, and {adjective2} creatures and they wish to {action1} the people of Earth.\nThankfully {yourName} is in charge dealing with the aliens, and you plan to {action2} them.\nThe plan was a huge {result} and the {nameOfAlien}s have decided to {verb} and they went to {place} instead.\n")
 
-def romanceThemed():
-  adjective = input("Enter an Adjective: ")
-  verb = input("Enter a Verb: ")
-  action = input("Enter an action: ")
-  print(f"blah blah blah")
+def horrorThemed():
+  nameOfPlace = input("Enter the name of a restaraunt: ")
+  mascotName = input("Enter a funny name: ")
+  nameOfAnimal = input("Enter an animal species: ")
+  food = input("Enter a food: ")
+  height = input("Enter a number: ")
+  weight = input("Enter a number: ")
+  action1 = input("Enter a violent action: ")
+  item = input("Enter an item you find useful: ")
+  print(f"You're stuck in a haunted {nameOfPlace} and the mascot has come alive and is out for blood.\n {mascotName} the {nameOfAnimal}, is {height} ft tall and weighs {weight}kg, was struck by lightning and has turned evil.\n You  were hungry for {food} and you had the misfortune to be trapped in {nameOfPlace} with {mascotName}.\n To survive you grab a {item} and you use it to {action1} {mascotName}.  ")
 
-storyList =[fantasyThemed, sciFiThemed, romanceThemed]
+storyList =[fantasyThemed, sciFiThemed, horrorThemed]
 
 def generateStory():
   story = random.choice(storyList)
